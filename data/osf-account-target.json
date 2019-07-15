@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "osf_Account_Target__c",
+        "referenceId": "SourceRef6"
+      },
+      "Name": "Amazon",
+      "osf_Codigo_Cobra__c": "osf-cobra-A",
+      "osf_Target_Number__c": 2
+    },
+    {
+      "attributes": {
+        "type": "osf_Account_Target__c",
+        "referenceId": "SourceRef7"
+      },
+      "Name": "Microsoft",
+      "osf_Codigo_Cobra__c": "osf-cobra-B",
+      "osf_Target_Number__c": 2
+    },
+    {
+      "attributes": {
+        "type": "osf_Account_Target__c",
+        "referenceId": "SourceRef8"
+      },
+      "Name": "Salesforce",
+      "osf_Codigo_Cobra__c": "osf-cobra-C",
+      "osf_Target_Number__c": 2
+    },
+    {
+      "attributes": {
+        "type": "osf_Account_Target__c",
+        "referenceId": "SourceRef9"
+      },
+      "Name": "Twitter",
+      "osf_Codigo_Cobra__c": "osf-cobra-D",
+      "osf_Target_Number__c": 2
+    },
+    {
+      "attributes": {
+        "type": "osf_Account_Target__c",
+        "referenceId": "SourceRef10"
+      },
+      "Name": "Apple",
+      "osf_Codigo_Cobra__c": "osf-cobra-E",
+      "osf_Target_Number__c": 2
+    }
+  ]
+}

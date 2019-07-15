@@ -1,0 +1,49 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "osf_Account_Source__c",
+        "referenceId": "SourceRef1"
+      },
+      "Name": "OSF",
+      "osf_Codigo_Cobra__c": "osf-cobra-A",
+      "osf_Source_Number__c": 1
+    },
+    {
+      "attributes": {
+        "type": "osf_Account_Source__c",
+        "referenceId": "SourceRef2"
+      },
+      "Name": "iFactory",
+      "osf_Codigo_Cobra__c": "osf-cobra-B",
+      "osf_Source_Number__c": 1
+    },
+    {
+      "attributes": {
+        "type": "osf_Account_Source__c",
+        "referenceId": "SourceRef3"
+      },
+      "Name": "Cobra",
+      "osf_Codigo_Cobra__c": "osf-cobra-C",
+      "osf_Source_Number__c": 1
+    },
+    {
+      "attributes": {
+        "type": "osf_Account_Source__c",
+        "referenceId": "SourceRef4"
+      },
+      "Name": "SuccessYou",
+      "osf_Codigo_Cobra__c": "osf-cobra-D",
+      "osf_Source_Number__c": 1
+    },
+    {
+      "attributes": {
+        "type": "osf_Account_Source__c",
+        "referenceId": "SourceRef5"
+      },
+      "Name": "Wings",
+      "osf_Codigo_Cobra__c": "osf-cobra-E",
+      "osf_Source_Number__c": 1
+    }
+  ]
+}

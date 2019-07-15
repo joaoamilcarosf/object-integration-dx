@@ -1,0 +1,16 @@
+[
+  {
+    "sobject": "osf_Account_Source__c",
+    "saveRefs": true,
+    "files": [
+      "osf-account-source.json"
+    ]
+  },
+  {
+    "sobject": "osf_Account_Target__c",
+    "saveRefs": true,
+    "files": [
+      "osf-account-target.json"
+    ]
+  }
+]
