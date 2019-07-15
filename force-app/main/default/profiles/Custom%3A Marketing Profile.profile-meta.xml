@@ -17,6 +17,14 @@
     <layoutAssignments>
         <layout>osf_Account_Target__c-osf Account Target Layout</layout>
     </layoutAssignments>
+    <tabVisibilities>
+        <tab>osf_Account_Source__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>osf_Account_Target__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <userLicense>Salesforce</userLicense>
     <userPermissions>
         <enabled>true</enabled>
