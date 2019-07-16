@@ -1,4 +1,4 @@
-# The object translation process
+# The Object Translation Process
 ( https://dev.osf-global.com/jira/browse/COBRA-134 )
 
 Integration flow:
