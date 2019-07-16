@@ -32,8 +32,8 @@ If some warn appears or anything goes wrong, please verify the requirements:
 3) Created at least one custom metadata type record and activate it.
 
 Pending:
-- Update the Last Value field.
-- Run the process to update objects based on Unique Field, using information on Fields Map. The current process just update records, it does not translate fields between objects yet.
+- Update the Last Value field on metadata.
+- Run the process to translate target objects from source objects data, based on Unique Field, using information on Fields Map. The current process just update source records, it does not translate fields between objects yet.
 
 
 
