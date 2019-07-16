@@ -28,11 +28,11 @@ b) Run the process to update objects based on Unique Field, using information on
 If some warn appears or anything goes wrong, please verify the requirements:
 1) Defined both source and target (custom) objects.
 2) Created a custom metadata type with the following custom fields, for each source-target pair of objects. Each record of this may represent general instructions about how to proceed with the translation:
-2.1) Active: given it is possible to create many records for a metadata, it is easier to check or uncheck this field to inform which metadata must be considered for the next translations. A priori, only one of them must be checked.
-2.2) Email: provide an email address to be warned with general informations when the batch process of translations are finished.
-2.3) Fields Map: provide a JSON-like with the fields named after Source Object Fields, and values named after the correspondent Target Object Fields. This JSON can be improved with instrucitons to make the whole process easier.
-2.4) Last Value: This field is auto populated after each translation process, with the last LastModifiedDate value among all source objects translated in the last time.
-2.5) Unique Field: this field must be populated with the field name that uniquely correlates source and target objects. It is used for further updates purposes.
+- Active: given it is possible to create many records for a metadata, it is easier to check or uncheck this field to inform which metadata must be considered for the next translations. A priori, only one of them must be checked.
+- Email: provide an email address to be warned with general informations when the batch process of translations are finished.
+- Fields Map: provide a JSON-like with the fields named after Source Object Fields, and values named after the correspondent Target Object Fields. This JSON can be improved with instrucitons to make the whole process easier.
+- Last Value: This field is auto populated after each translation process, with the last LastModifiedDate value among all source objects translated in the last time.
+- Unique Field: this field must be populated with the field name that uniquely correlates source and target objects. It is used for further updates purposes.
 3) Created at least one custom metadata type record and activate it.
 
 
