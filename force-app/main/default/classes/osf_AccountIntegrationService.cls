@@ -29,13 +29,13 @@ global class osf_AccountIntegrationService implements Database.Batchable<sObject
         ]);
     }
 
-    // process each batch of records
+    // TODO: process each batch of records
     global void execute(Database.BatchableContext bc, List<osf_Account_Source__c> scope) {
         if(scope.size() > 0) {
             List<osf_Account_Source__c> newAccounts = new List<osf_Account_Source__c>();
 
             for(osf_Account_Source__c account: scope) {
-                account.osf_Source_Number__c = 12;
+                account.osf_Source_Number__c = 13;
                 recordsProcessed = recordsProcessed + 1;
                 newAccounts.add(account);
                 
@@ -59,6 +59,8 @@ global class osf_AccountIntegrationService implements Database.Batchable<sObject
         osf_MessageService.sendEmailMessageByJob(job, accountMapping, recordsProcessed);
         
         if(job.Status == 'Completed' && job.NumberOfErrors == 0 && recordsProcessed > 0) {
+            // TODO: update osf_Last_Value__c on metadata
+
             // accountMapping.osf_Last_Value__c = newLastValue;
             // upsert accountMapping;
 

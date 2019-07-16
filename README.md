@@ -1,3 +1,44 @@
+The object translation process ( https://dev.osf-global.com/jira/browse/COBRA-134 )
+
+Integration flow:
+1) A first query is performed to find the Metadata record that is activated.
+2) The last value founded on this metadata is used to filter another query for the next objects to be processed.
+3) Objects are processed (translated).
+4) Last value for the used metadata is updated. 
+The process is pointed in three basic steps on comments at osf_AccountIntegrationService class.
+
+Testing:
+1) Clone this repository.
+2) Create a scratch org and push this project.
+3) Import records provided on /data/sample-data-plan.json file.
+4) Open developer console.
+5) Choose a future time (CRON time-based) to run the test job.
+6) Open execute anonymous window, and run the code bellow:
+```
+osf_AccountIntegrationSchedule schedule = new osf_AccountIntegrationSchedule();
+String cron = '0 59 10 * * ?';
+String jobID = system.schedule('New import job', cron, schedule);
+System.debug('Schedule job ID: ' + jobID);
+```
+
+Pending:
+a) Update the Last Value field.
+b) Run the process to update objects based on Unique Field, using information on Fields Map.
+
+If some warn appears or anything goes wrong, please verify the requirements:
+1) Defined both source and target (custom) objects.
+2) Created a custom metadata type with the following custom fields, for each source-target pair of objects. Each record of this may represent general instructions about how to proceed with the translation:
+2.1) Active: given it is possible to create many records for a metadata, it is easier to check or uncheck this field to inform which metadata must be considered for the next translations. A priori, only one of them must be checked.
+2.2) Email: provide an email address to be warned with general informations when the batch process of translations are finished.
+2.3) Fields Map: provide a JSON-like with the fields named after Source Object Fields, and values named after the correspondent Target Object Fields. This JSON can be improved with instrucitons to make the whole process easier.
+2.4) Last Value: This field is auto populated after each translation process, with the last LastModifiedDate value among all source objects translated in the last time.
+2.5) Unique Field: this field must be populated with the field name that uniquely correlates source and target objects. It is used for further updates purposes.
+3) Created at least one custom metadata type record and activate it.
+
+
+
+
+
 # Salesforce App
 
 This guide helps Salesforce developers who are new to Visual Studio Code go from zero to a deployed app using Salesforce Extensions for VS Code and Salesforce CLI.
