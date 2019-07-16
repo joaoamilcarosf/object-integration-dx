@@ -32,19 +32,21 @@ global class osf_AccountIntegrationService implements Database.Batchable<sObject
     // TODO: process each batch of records
     global void execute(Database.BatchableContext bc, List<osf_Account_Source__c> scope) {
         if(scope.size() > 0) {
-            List<osf_Account_Source__c> newAccounts = new List<osf_Account_Source__c>();
+            List<osf_Account_Target__c> targetAccounts = new List<osf_Account_Target__c>();
 
             for(osf_Account_Source__c account: scope) {
-                account.osf_Source_Number__c = 13;
+                osf_Account_Target__c targetAccount = new osf_Account_Target__c();
+                targetAccount.osf_Codigo_Cobra__c = account.osf_Codigo_Cobra__c;
+                targetAccount.osf_Target_Number__c = account.osf_Source_Number__c;
                 recordsProcessed = recordsProcessed + 1;
-                newAccounts.add(account);
+                targetAccounts.add(targetAccount);
                 
                 if(account.LastModifiedDate > newLastValue || newLastValue == null) {
                     newLastValue = account.LastModifiedDate;
                 }
             }
 
-            upsert newAccounts;
+            upsert targetAccounts osf_Codigo_Cobra__c;
         }
     }
 

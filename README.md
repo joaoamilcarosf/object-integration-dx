@@ -34,7 +34,7 @@ If some warn appears or anything goes wrong, please verify the requirements:
 
 Pending:
 - Update the Last Value field on metadata.
-- Run the process to translate target objects from source objects data, based on Unique Field, using information on Fields Map. The current process just update source records, it does not translate fields between objects yet.
+- Run the process to translate target objects from source objects data, based on Unique Field, using information on Fields Map.
 
 
 
