@@ -1,4 +1,5 @@
-The object translation process ( https://dev.osf-global.com/jira/browse/COBRA-134 )
+# The object translation process
+( https://dev.osf-global.com/jira/browse/COBRA-134 )
 
 Integration flow:
 1) A first query is performed to find the Metadata record that is activated.
