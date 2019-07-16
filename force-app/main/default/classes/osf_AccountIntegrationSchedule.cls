@@ -1,5 +1,5 @@
-global class osf_ScheduleAccountIntegration implements Schedulable {
-    public osf_ScheduleAccountIntegration() {
+global class osf_AccountIntegrationSchedule implements Schedulable {
+    public osf_AccountIntegrationSchedule() {
 
     }
 

@@ -35,7 +35,7 @@ global class osf_AccountIntegrationService implements Database.Batchable<sObject
             List<osf_Account_Source__c> newAccounts = new List<osf_Account_Source__c>();
 
             for(osf_Account_Source__c account: scope) {
-                account.osf_Source_Number__c = 11;
+                account.osf_Source_Number__c = 12;
                 recordsProcessed = recordsProcessed + 1;
                 newAccounts.add(account);
                 
