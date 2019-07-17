@@ -1,14 +1,14 @@
 # The Object Translation Process
 ( https://dev.osf-global.com/jira/browse/COBRA-134 )
 
-Integration flow:
+### Integration flow:
 1) A first query is performed to find the Metadata record that is activated.
 2) The last value founded on this metadata is used to filter another query for the next objects to be processed.
 3) Objects are processed (translated).
 4) Last value for the used metadata is updated. 
 The process is pointed in three basic steps on comments at osf_AccountIntegrationService class.
 
-Testing:
+### Testing:
 1) Clone this repository.
 2) Create a scratch org and push this project.
 3) Import records provided on /data/sample-data-plan.json file.
@@ -32,7 +32,7 @@ If some warn appears or anything goes wrong, please verify the requirements:
 - Unique Field: this field must be populated with the field name that uniquely correlates source and target objects. It is used for further updates purposes.
 3) Created at least one custom metadata type record and activate it.
 
-Pending:
+### Pending:
 - Update the Last Value field on metadata.
 - Run the process to translate target objects from source objects data, based on Unique Field, using information on Fields Map.
 
