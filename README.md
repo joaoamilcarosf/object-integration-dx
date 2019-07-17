@@ -15,6 +15,7 @@ The process is pointed in three basic steps on comments at osf_AccountIntegratio
 4) Open developer console.
 5) Choose a future time (CRON time-based) to run the test job.
 6) Open execute anonymous window, and create an Apex scheduler by running the code bellow:
+
 ```
 osf_AccountIntegrationSchedule schedule = new osf_AccountIntegrationSchedule();
 String cron = '0 59 10 * * ?';
@@ -26,7 +27,7 @@ If some warn appears or anything goes wrong, please verify the requirements:
 1) Defined both source and target (custom) objects: for this sample code, osf_Account_Source__c and osf_Account_Target__c respectively.
 2) Created a custom metadata type (osf_Account_Mapping__mdt) with the following custom fields, for each source-target pair of objects. Each record of this may represent general instructions about how to proceed with the translation:
 - Active: given it is possible to create many records for a metadata, it is easier to check or uncheck this field to inform which metadata must be considered for the next translations. A priori, only one of them must be checked.
-- Email: provide an email address to be warned with general informations when the batch process of translations are finished.
+- Email: provide an email address to be warned with general informations when the batch process of translations is finished.
 - Fields Map: provide a JSON-like with the fields named after Source Object Fields, and values named after the correspondent Target Object Fields. This JSON can be improved with instrucitons to make the whole process easier.
 - Last Value: This field is auto populated after each translation process, with the last LastModifiedDate value among all source objects translated in the last time.
 - Unique Field: this field must be populated with the field name that uniquely correlates source and target objects. It is used for further updates purposes.
