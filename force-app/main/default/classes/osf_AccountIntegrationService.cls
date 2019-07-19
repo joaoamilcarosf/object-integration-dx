@@ -29,7 +29,7 @@ global class osf_AccountIntegrationService implements Database.Batchable<sObject
         ]);
     }
 
-    // TODO: process each batch of records
+    // process each batch of records
     global void execute(Database.BatchableContext bc, List<osf_Account_Source__c> scope) {
         if(scope.size() > 0) {
             // List<osf_Account_Target__c> targetAccounts = osf_AccountMappingService.start(scope, accountMapping);
@@ -41,6 +41,7 @@ global class osf_AccountIntegrationService implements Database.Batchable<sObject
             for(osf_Account_Source__c account: scope) {
                 osf_Account_Target__c targetAccount = new osf_Account_Target__c();
 
+                // TODO: consider a pre-process before assignment for required combinations of pairs of field types
                 for(String key: fieldsMap.keySet()) {
                     String sourceFieldAPIName = key;
                     String targetFieldAPIName = (String) fieldsMap.get(key);
