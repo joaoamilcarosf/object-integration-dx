@@ -34,6 +34,10 @@
                 <behavior>Edit</behavior>
                 <field>osf_Unique_Field__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>osf_Target_Object__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>

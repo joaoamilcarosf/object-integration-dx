@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
     <classAccesses>
+        <apexClass>osf_AccountIntegrationSchedule</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <classAccesses>
         <apexClass>osf_AccountIntegrationService</apexClass>
         <enabled>true</enabled>
     </classAccesses>
@@ -27,6 +31,11 @@
     <fieldPermissions>
         <editable>false</editable>
         <field>osf_Account_Mapping__mdt.osf_Last_Value__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>osf_Account_Mapping__mdt.osf_Target_Object__c</field>
         <readable>false</readable>
     </fieldPermissions>
     <fieldPermissions>

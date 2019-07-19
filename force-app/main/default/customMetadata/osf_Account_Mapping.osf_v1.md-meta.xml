@@ -12,14 +12,46 @@
     </values>
     <values>
         <field>osf_Fields_Map__c</field>
-        <value xsi:type="xsd:string">{ 
-  &quot;Name&quot;: &quot;Name&quot;, 
-  &quot;osf_Source_Number__c&quot;: &quot;osf_Target_Number__c&quot; 
-}</value>
+        <value xsi:type="xsd:string">[
+  {
+    &quot;source&quot;: {
+      &quot;fieldName&quot;: &quot;Name&quot;,
+      &quot;fieldType&quot;: &quot;STRING&quot;
+    },
+    &quot;target&quot;: {
+      &quot;fieldName&quot;: &quot;Name&quot;,
+      &quot;fieldType&quot;: &quot;STRING&quot;
+    }
+  },
+  {
+    &quot;source&quot;: {
+      &quot;fieldName&quot;: &quot;osf_Codigo_Cobra__c&quot;,
+      &quot;fieldType&quot;: &quot;STRING&quot;
+    },
+    &quot;target&quot;: {
+      &quot;fieldName&quot;: &quot;osf_Codigo_Cobra__c&quot;,
+      &quot;fieldType&quot;: &quot;STRING&quot;
+    }
+  },
+  {
+    &quot;source&quot;: {
+      &quot;fieldName&quot;: &quot;osf_Source_Number__c&quot;,
+      &quot;fieldType&quot;: &quot;DOUBLE&quot;
+    },
+    &quot;target&quot;: {
+      &quot;fieldName&quot;: &quot;osf_Target_Number__c&quot;,
+      &quot;fieldType&quot;: &quot;DOUBLE&quot;
+    }
+  }
+]</value>
     </values>
     <values>
         <field>osf_Last_Value__c</field>
         <value xsi:type="xsd:dateTime">2019-07-10T14:18:00.000Z</value>
+    </values>
+    <values>
+        <field>osf_Target_Object__c</field>
+        <value xsi:nil="true"/>
     </values>
     <values>
         <field>osf_Unique_Field__c</field>
