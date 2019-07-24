@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Profile xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>MyImage</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>MyImage2</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>osf_AccountIntegrationSchedule</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>osf_AccountIntegrationService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
+    <classAccesses>
+        <apexClass>osf_MessageService</apexClass>
+        <enabled>false</enabled>
+    </classAccesses>
     <custom>true</custom>
     <fieldPermissions>
         <editable>false</editable>
@@ -23,6 +43,11 @@
     </fieldPermissions>
     <fieldPermissions>
         <editable>false</editable>
+        <field>osf_Account_Mapping__mdt.osf_Target_Object__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
         <field>osf_Account_Mapping__mdt.osf_Unique_Field__c</field>
         <readable>false</readable>
     </fieldPermissions>
@@ -36,6 +61,11 @@
         <field>osf_Account_Target__c.osf_Target_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>osf_Image__c.osf_base64__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>osf_Account_Mapping__mdt-osf Account Mapping Layout</layout>
     </layoutAssignments>
@@ -45,12 +75,23 @@
     <layoutAssignments>
         <layout>osf_Account_Target__c-osf Account Target Layout</layout>
     </layoutAssignments>
+    <layoutAssignments>
+        <layout>osf_Image__c-osf Image Layout</layout>
+    </layoutAssignments>
+    <pageAccesses>
+        <apexPage>DisplayImage</apexPage>
+        <enabled>false</enabled>
+    </pageAccesses>
     <tabVisibilities>
         <tab>osf_Account_Source__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>osf_Account_Target__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>osf_Image__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>

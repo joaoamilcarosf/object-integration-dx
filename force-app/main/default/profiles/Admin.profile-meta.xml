@@ -53,6 +53,11 @@
         <field>osf_Account_Target__c.osf_Target_Number__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>osf_Image__c.osf_base64__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>osf_Account_Mapping__mdt-osf Account Mapping Layout</layout>
     </layoutAssignments>
@@ -61,6 +66,9 @@
     </layoutAssignments>
     <layoutAssignments>
         <layout>osf_Account_Target__c-osf Account Target Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>osf_Image__c-osf Image Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>true</allowCreate>
@@ -80,12 +88,25 @@
         <object>osf_Account_Target__c</object>
         <viewAllRecords>true</viewAllRecords>
     </objectPermissions>
+    <objectPermissions>
+        <allowCreate>true</allowCreate>
+        <allowDelete>true</allowDelete>
+        <allowEdit>true</allowEdit>
+        <allowRead>true</allowRead>
+        <modifyAllRecords>true</modifyAllRecords>
+        <object>osf_Image__c</object>
+        <viewAllRecords>true</viewAllRecords>
+    </objectPermissions>
     <tabVisibilities>
         <tab>osf_Account_Source__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <tabVisibilities>
         <tab>osf_Account_Target__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>osf_Image__c</tab>
         <visibility>DefaultOn</visibility>
     </tabVisibilities>
     <userLicense>Salesforce</userLicense>

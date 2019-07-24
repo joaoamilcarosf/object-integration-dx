@@ -45,7 +45,15 @@ global class osf_AccountIntegrationService implements Database.Batchable<sObject
                 for(String key: fieldsMap.keySet()) {
                     String sourceFieldAPIName = key;
                     String targetFieldAPIName = (String) fieldsMap.get(key);
-                    targetAccount.put(targetFieldAPIName, account.get(sourceFieldAPIName));
+
+                    Schema.SObjectField sourceField = account.getSObjectType().getDescribe().fields.getMap().get(sourceFieldAPIName);
+                    Schema.SObjectField targetField = account.getSObjectType().getDescribe().fields.getMap().get(targetFieldAPIName);
+                    Object sourceValue = account.get(sourceFieldAPIName);
+                    
+                    // Object processedTargetValue = osf_AssignmentService.assignTest(sourceField, targetField, sourceValue);
+                    Object processedTargetValue = account.get(sourceFieldAPIName);
+                    
+                    targetAccount.put(targetFieldAPIName, processedTargetValue);
                 }
                 
                 targetAccounts.add(targetAccount);
