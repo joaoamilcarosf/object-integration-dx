@@ -1,12 +1,8 @@
-global class osf_AccountIntegrationService implements Database.Batchable<sObject>, Database.Stateful {
+global class osf_AccountSourceBatch implements Database.Batchable<sObject>, Database.Stateful {
     // instance members to retain state across transactions
     global Integer recordsProcessed = 0;
     global osf_Account_Mapping__mdt accountMapping;
     global Datetime newLastValue;
-    
-    public osf_AccountIntegrationService() {
-
-    }
 
     // collect the batches of records or objects to be passed to execute
     // return (Database.QueryLocator | Iterable<sObject>)

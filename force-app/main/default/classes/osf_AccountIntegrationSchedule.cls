@@ -1,10 +1,6 @@
 global class osf_AccountIntegrationSchedule implements Schedulable {
-    public osf_AccountIntegrationSchedule() {
-
-    }
-
-    global void execute(SchedulableContext SC) {
-        osf_AccountIntegrationService batch = new osf_AccountIntegrationService();
+    global void execute(SchedulableContext sc) {
+        osf_AccountSourceBatch batch = new osf_AccountSourceBatch();
         Database.executeBatch(batch);
     }
 }
