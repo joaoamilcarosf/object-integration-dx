@@ -33,7 +33,6 @@ public with sharing class osf_AccountSourceService {
     public static osf_Account_Target__c assign(Map<String, Object> fieldsMap, SObject sourceObject) {
         osf_Account_Target__c targetObject = new osf_Account_Target__c();
 
-        // TODO: consider a pre-process before assignment for required combinations of pairs of field types
         for(String key: fieldsMap.keySet()) {
             String sourceFieldAPIName = key;
             String targetFieldAPIName = (String) fieldsMap.get(key);
