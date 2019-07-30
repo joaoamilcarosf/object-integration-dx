@@ -47,7 +47,7 @@ If some warn appears or anything goes wrong, please verify the requirements:
 3) Created at least one custom metadata type record and activate it.
 
 ### Pending:
-- Update the Last Value field on metadata.
+- Update the Last Value field on metadata during the batch flow.
 
 
 
