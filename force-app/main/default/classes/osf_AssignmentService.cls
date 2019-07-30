@@ -4,7 +4,7 @@ public with sharing class osf_AssignmentService {
 
     }
 
-    public static Object assign(String sourceFieldAPIName, String targetFieldAPIName, SObject sourceObject, SObject targetObject) {
+    public static Object process(String sourceFieldAPIName, String targetFieldAPIName, SObject sourceObject, SObject targetObject) {
         Schema.SObjectField sourceField = sourceObject.getSObjectType().getDescribe().fields.getMap().get(sourceFieldAPIName);
         Schema.DisplayType sourceFieldType = sourceField.getDescribe().getType();
         Object sourceValue = sourceObject.get(sourceFieldAPIName);
