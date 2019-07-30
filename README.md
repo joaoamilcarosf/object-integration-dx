@@ -1,27 +1,40 @@
-# The Object Translation Process
+# The Object Integration Process
 ( https://dev.osf-global.com/jira/browse/COBRA-134 )
 
-### Integration flow:
-1) A first query is performed to find the Metadata record that is activated.
+### Batch flow:
+1) A first query is performed to find the Metadata record that is activated. Metadata is used for integration settings purposes.
 2) The last value founded on this metadata is used to filter another query for the next objects to be processed.
 3) Objects are processed (translated).
 4) Last value for the used metadata is updated. 
-The process is pointed in three basic steps on comments at osf_AccountIntegrationService class.
+The process is pointed in three basic steps on comments at osf_AccountSourceBatch class.
 
 ### Testing:
 1) Clone this repository.
 2) Create a scratch org and push this project.
 3) Import records provided on /data/sample-data-plan.json file.
-4) Open developer console.
-5) Choose a future time (CRON time-based) to run the test job.
-6) Open execute anonymous window, and create an Apex scheduler by running the code bellow:
+4) Make changes on osf_Account_Source__c
+5) Open developer console.
+6) Choose a future time (CRON time-based) to run the test job.
+7) Open execute anonymous window, and create an Apex scheduler by running the code bellow.
+8) After the batch is completed, verify changes reflected on osf_Account_Target__c.
 
 ```
-osf_AccountIntegrationSchedule schedule = new osf_AccountIntegrationSchedule();
+osf_AccountSourceSchedule schedule = new osf_AccountSourceSchedule();
 String cron = '0 59 10 * * ?';
 String jobID = system.schedule('New import job', cron, schedule);
 System.debug('Schedule job ID: ' + jobID);
 ```
+
+### Trigger flow:
+1) A first query is performed to find the Metadata record that is activated. Metadata is used for integration settings purposes.
+2) The triggered sobject (Trigger.new) is processed (translated).
+
+### Testing:
+1) Clone this repository.
+2) Create a scratch org and push this project.
+3) Import records provided on /data/sample-data-plan.json file.
+4) Make changes on osf_Account_Source__c.
+5) Verify changes reflected on osf_Account_Target__c.
 
 If some warn appears or anything goes wrong, please verify the requirements:
 1) Defined both source and target (custom) objects: for this sample code, osf_Account_Source__c and osf_Account_Target__c respectively.
@@ -35,7 +48,6 @@ If some warn appears or anything goes wrong, please verify the requirements:
 
 ### Pending:
 - Update the Last Value field on metadata.
-- Run the process to translate target objects from source objects data, based on Unique Field, using information on Fields Map.
 
 
 
