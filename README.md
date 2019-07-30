@@ -33,8 +33,9 @@ System.debug('Schedule job ID: ' + jobID);
 1) Clone this repository.
 2) Create a scratch org and push this project.
 3) Import records provided on /data/sample-data-plan.json file.
-4) Make changes on osf_Account_Source__c.
-5) Verify changes reflected on osf_Account_Target__c.
+4) Make sure trigger is activated.
+5) Make changes on osf_Account_Source__c (any field described on Metadata fields map).
+6) Verify changes reflected on osf_Account_Target__c.
 
 If some warn appears or anything goes wrong, please verify the requirements:
 1) Defined both source and target (custom) objects: for this sample code, osf_Account_Source__c and osf_Account_Target__c respectively.
