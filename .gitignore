@@ -27,6 +27,9 @@ ehthumbs.db
 [Dd]esktop.ini
 $RECYCLE.BIN/
 
+# OSF Custom
+temp/
+
 
 
 
