@@ -4,7 +4,7 @@ public with sharing class osf_AccountSourceService {
         osf_Account_Mapping__mdt settings;
         
         for(osf_Account_Mapping__mdt rec: [
-            SELECT Id, osf_Active__c, osf_Last_Value__c, osf_Email__c, osf_Target_Object__c, osf_Fields_Map__c, osf_Unique_Field__c
+            SELECT Id, DeveloperName, MasterLabel, NamespacePrefix, osf_Active__c, osf_Last_Value__c, osf_Email__c, osf_Target_Object__c, osf_Fields_Map__c, osf_Unique_Field__c
             FROM osf_Account_Mapping__mdt
             WHERE osf_Active__c = true
             ORDER BY osf_Last_Value__c DESC
