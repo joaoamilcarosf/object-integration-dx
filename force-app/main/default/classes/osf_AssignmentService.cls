@@ -17,7 +17,6 @@ public with sharing class osf_AssignmentService {
         return targetObject;
     }
 
-    // consider a pre-process before assignment for required combinations of pairs of field types
     public static Object process(String sourceFieldAPIName, String targetFieldAPIName, SObject sourceObject, SObject targetObject) {
         Schema.SObjectField sourceField = sourceObject.getSObjectType().getDescribe().fields.getMap().get(sourceFieldAPIName);
         Schema.DisplayType sourceFieldType = sourceField.getDescribe().getType();

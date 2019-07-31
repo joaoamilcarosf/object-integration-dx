@@ -24,8 +24,8 @@ public with sharing class osf_AccountSourceService {
     }
 
     public static Schema.SObjectField getUniqueField(osf_Account_Mapping__mdt settings) {
-        SObject targetObj = Schema.getGlobalDescribe().get(settings.osf_Target_Object__c).newSObject();
-        Schema.SObjectField uniqueField = targetObj.getSObjectType().getDescribe().fields.getMap().get(settings.osf_Unique_Field__c);
+        SObject targetSObj = Schema.getGlobalDescribe().get(settings.osf_Target_Object__c).newSObject();
+        Schema.SObjectField uniqueField = targetSObj.getSObjectType().getDescribe().fields.getMap().get(settings.osf_Unique_Field__c);
         
         return uniqueField;
     }
