@@ -1,5 +1,5 @@
 public with sharing class osf_AccountSourceService {
-    // TODO: check if the custom metadata type on return can be abstracted.
+    // TODO: check if a custom metadata type can be abstracted and revise all methods here
     public static osf_Account_Mapping__mdt getCustomSettings() {
         osf_Account_Mapping__mdt settings;
         
@@ -16,7 +16,6 @@ public with sharing class osf_AccountSourceService {
         return settings;
     }
 
-    // TODO: check if the custom metadata type on argument can be abstracted.
     public static Map<String, Object> getFieldsMap(osf_Account_Mapping__mdt settings) {
         String fieldsMapJsonString = settings.osf_Fields_Map__c;
         Map<String, Object> fieldsMap = (Map<String, Object>) JSON.deserializeUntyped(fieldsMapJsonString);
