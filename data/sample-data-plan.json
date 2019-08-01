@@ -12,5 +12,12 @@
     "files": [
       "osf-account-target.json"
     ]
+  },
+  {
+    "sobject": "osf_Image__c",
+    "saveRefs": true,
+    "files": [
+      "osf-image.json"
+    ]
   }
 ]
