@@ -1,0 +1,19 @@
+<apex:page showHeader="false" title="Image from Base64" sidebar="false" controller="osf_Image">
+    <apex:form >
+        <table>
+            <tr>
+            	<td width="100px" height="60px" align="center">
+                    <!-- <img src="data:image/jpeg;base64,{!base64string}" /> -->
+                	<apex:image value="data:image;base64,{!base64string}" />
+                </td>
+            </tr>
+        </table>
+    </apex:form>
+</apex:page>
+
+<!-- 
+https://salesforce.stackexchange.com/questions/177234/base64-to-image
+https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_methods_system_blob.htm
+https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_encodingUtil.htm#apex_classes_restful_encodingutil
+http://www.salesforcegeneral.com/salesforce-articles/base-64-encoding-in-apex.html
+ -->
