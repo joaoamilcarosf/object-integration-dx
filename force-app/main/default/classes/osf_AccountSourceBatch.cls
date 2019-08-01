@@ -26,7 +26,7 @@ global class osf_AccountSourceBatch implements Database.Batchable<sObject>, Data
             for(osf_Account_Source__c account: scope) {
                 osf_Account_Target__c targetAccount = (osf_Account_Target__c) osf_AssignmentService.assign(fieldsMap, settings.osf_Target_Object__c, account);
                 targetAccounts.add(targetAccount);
-                
+
                 if(account.LastModifiedDate > newLastValue || newLastValue == null) {
                     newLastValue = account.LastModifiedDate;
                 }

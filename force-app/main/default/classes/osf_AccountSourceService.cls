@@ -2,7 +2,7 @@ public with sharing class osf_AccountSourceService {
     // TODO: check if a custom metadata type can be abstracted and revise all methods here
     public static osf_Account_Mapping__mdt getCustomSettings() {
         osf_Account_Mapping__mdt settings;
-        
+
         for(osf_Account_Mapping__mdt rec: [
             SELECT Id, DeveloperName, MasterLabel, NamespacePrefix, osf_Active__c, osf_Last_Value__c, osf_Email__c, osf_Target_Object__c, osf_Fields_Map__c, osf_Unique_Field__c
             FROM osf_Account_Mapping__mdt
@@ -26,7 +26,7 @@ public with sharing class osf_AccountSourceService {
     public static Schema.SObjectField getUniqueField(osf_Account_Mapping__mdt settings) {
         SObject targetSObj = Schema.getGlobalDescribe().get(settings.osf_Target_Object__c).newSObject();
         Schema.SObjectField uniqueField = targetSObj.getSObjectType().getDescribe().fields.getMap().get(settings.osf_Unique_Field__c);
-        
+
         return uniqueField;
     }
 
@@ -37,7 +37,7 @@ public with sharing class osf_AccountSourceService {
         customMetadata.fullName = namespacePrefix + 'osf_Account_Mapping__mdt.' + settings.DeveloperName;
         customMetadata.label = settings.MasterLabel;
 
-        // Add all the field values 
+        // Add all the field values
         Metadata.CustomMetadataValue customField = new Metadata.CustomMetadataValue();
         customField.field = 'osf_Last_Value__c';
         customField.value = newLastValue;

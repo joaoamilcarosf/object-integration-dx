@@ -11,7 +11,7 @@
     </apex:form>
 </apex:page>
 
-<!-- 
+<!--
 https://salesforce.stackexchange.com/questions/177234/base64-to-image
 https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_methods_system_blob.htm
 https://developer.salesforce.com/docs/atlas.en-us.apexcode.meta/apexcode/apex_classes_restful_encodingUtil.htm#apex_classes_restful_encodingutil

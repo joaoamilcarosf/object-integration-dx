@@ -2,13 +2,13 @@ public with sharing class osf_AssignmentService {
     // TODO: refactor to receive a List<SObject> of sourceObjects
     public static SObject assign(Map<String, Object> fieldsMap, String targetObjAPIName, SObject sourceObject) {
         SObject targetObject = Schema.getGlobalDescribe().get(targetObjAPIName).newSObject();
-        
+
         for(String key: fieldsMap.keySet()) {
             String sourceFieldAPIName = key;
             String targetFieldAPIName = (String) fieldsMap.get(key);
 
             Object processedTargetValue = process(sourceFieldAPIName, targetFieldAPIName, sourceObject, targetObject);
-            
+
             if (processedTargetValue != null) {
                 targetObject.put(targetFieldAPIName, processedTargetValue);
             }

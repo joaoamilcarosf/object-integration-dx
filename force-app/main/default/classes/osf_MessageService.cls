@@ -5,12 +5,12 @@ public with sharing class osf_MessageService {
         // create a new single email message object, to send out a single email
         Messaging.SingleEmailMessage mail = new Messaging.SingleEmailMessage();
         // strings to hold the email addresses to which you are sending the email.
-        String[] toAddresses = new String[] { email }; 
+        String[] toAddresses = new String[] { email };
         // String[] ccAddresses = new String[] {};
         // assign the addresses for the To and CC lists to the mail object.
         mail.setToAddresses(toAddresses);
         // mail.setCcAddresses(ccAddresses);
-        // specify the address used when the recipients reply to the email. 
+        // specify the address used when the recipients reply to the email.
         mail.setReplyTo(email);
         // specify the name used as the display name.
         mail.setSenderDisplayName(displayName);
