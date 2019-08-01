@@ -47,32 +47,12 @@ global class osf_AccountSourceBatch implements Database.Batchable<sObject>, Data
             WHERE Id = :bc.getJobId()
         ];
 
-        // First error: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): DeployRequest, original object: EmailMessage
-        // osf_MessageService.sendEmailMessageByJob(job, settings.osf_Email__c, recordsProcessed);
-        
-        // update osf_Last_Value__c on Metadata
         if(job.Status == 'Completed' && job.NumberOfErrors == 0 && recordsProcessed > 0) {
-            // Set up custom metadata to be created in the subscriber org.
-            Metadata.CustomMetadata customMetadata =  new Metadata.CustomMetadata();
-            String namespacePrefix = (settings.NamespacePrefix == null) ? '' : settings.NamespacePrefix;
-            customMetadata.fullName = namespacePrefix + 'osf_Account_Mapping__mdt.' + settings.DeveloperName;
-            customMetadata.label = settings.MasterLabel;
-
-            // Add all the field values 
-            Metadata.CustomMetadataValue customField = new Metadata.CustomMetadataValue();
-            customField.field = 'osf_Last_Value__c';
-            customField.value = newLastValue;
-            customMetadata.values.add(customField);
-
-            System.debug( ' >>>> Created custom metadata object >>> ' + customMetadata );
-            Metadata.DeployContainer mdContainer = new Metadata.DeployContainer();
-            mdContainer.addMetadata(customMetadata);
-
-            // Setup deploy callback
-            osf_CustomMetadataDeployCallback callback = new osf_CustomMetadataDeployCallback();
-
-            // Enqueue custom metadata deployment. jobId is the deployment ID
-            Id jobId = Metadata.Operations.enqueueDeployment(mdContainer, callback);
+            osf_AccountSourceService.setLastValue(settings, newLastValue);
+        } else {
+            // TODO: move this line out to send this email message whatever the condition.
+            // First error: DML operation on setup object is not permitted after you have updated a non-setup object (or vice versa): DeployRequest, original object: EmailMessage
+            osf_MessageService.sendEmailMessageByJob(job, settings.osf_Email__c, recordsProcessed, 'OSF Cobra - Support');
         }
     }
 }

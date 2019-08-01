@@ -1,9 +1,5 @@
 public with sharing class osf_MessageService {
-    public osf_MessageService() {
-
-    }
-
-    public static void sendEmailMessageByJob(AsyncApexJob job, String email, Integer recordsProcessed) {
+    public static void sendEmailMessageByJob(AsyncApexJob job, String email, Integer recordsProcessed, String displayName) {
         // reserve email capacity for the Apex transaction to ensure not exceeding the daily email limits
         Messaging.reserveSingleEmailCapacity(2);
         // create a new single email message object, to send out a single email
@@ -17,9 +13,9 @@ public with sharing class osf_MessageService {
         // specify the address used when the recipients reply to the email. 
         mail.setReplyTo(email);
         // specify the name used as the display name.
-        mail.setSenderDisplayName('OSF Cobra - Support');
+        mail.setSenderDisplayName(displayName);
         // specify the subject line for your email address.
-        mail.setSubject('batch process.');
+        mail.setSubject('job statements.');
         // set to True if you want to BCC yourself on the email.
         mail.setBccSender(false);
         // optionally append the salesforce.com email signature to the email.

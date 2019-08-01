@@ -29,4 +29,29 @@ public with sharing class osf_AccountSourceService {
         
         return uniqueField;
     }
+
+    public static Id setLastValue(osf_Account_Mapping__mdt settings, Datetime newLastValue) {
+        // Set up custom metadata to be created in the subscriber org
+        Metadata.CustomMetadata customMetadata =  new Metadata.CustomMetadata();
+        String namespacePrefix = (settings.NamespacePrefix == null) ? '' : settings.NamespacePrefix;
+        customMetadata.fullName = namespacePrefix + 'osf_Account_Mapping__mdt.' + settings.DeveloperName;
+        customMetadata.label = settings.MasterLabel;
+
+        // Add all the field values 
+        Metadata.CustomMetadataValue customField = new Metadata.CustomMetadataValue();
+        customField.field = 'osf_Last_Value__c';
+        customField.value = newLastValue;
+        customMetadata.values.add(customField);
+
+        Metadata.DeployContainer mdContainer = new Metadata.DeployContainer();
+        mdContainer.addMetadata(customMetadata);
+
+        // Setup deploy callback
+        osf_CustomMetadataDeployCallback callback = new osf_CustomMetadataDeployCallback();
+
+        // Enqueue custom metadata deployment. jobId is the deployment ID
+        Id jobId = Metadata.Operations.enqueueDeployment(mdContainer, callback);
+
+        return jobId;
+    }
 }
