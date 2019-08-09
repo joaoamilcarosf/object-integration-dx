@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CompactLayout xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Padrao_Cobra</fullName>
+    <fields>Codigo_Cobra__c</fields>
+    <fields>Name</fields>
+    <fields>Fabricante__c</fields>
+    <fields>Peso__c</fields>
+    <fields>Qtd_M_nima_Ordem__c</fields>
+    <fields>GrupoMM__c</fields>
+    <fields>Tipo_Material__c</fields>
+    <label>Padrão Cobra</label>
+</CompactLayout>

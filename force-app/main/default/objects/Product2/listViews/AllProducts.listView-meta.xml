@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>AllProducts</fullName>
+    <columns>PRODUCT2.NAME</columns>
+    <columns>Codigo_Cobra__c</columns>
+    <columns>CodigoProduto__c</columns>
+    <columns>PRODUCT2.CUSTOMER_PRODUCT_ID</columns>
+    <columns>PRODUCT2.DESCRIPTION</columns>
+    <columns>Qtd_M_nima_Ordem__c</columns>
+    <columns>Fabricante__c</columns>
+    <columns>Cod_EAN__c</columns>
+    <columns>Cod_NBM__c</columns>
+    <columns>Denominacao_Normal__c</columns>
+    <columns>PRODUCT2.LAST_UPDATE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>Codigo_Cobra__c</field>
+        <operation>equals</operation>
+        <value>INTEGRACAO</value>
+    </filters>
+    <label>Todos Produtos</label>
+</ListView>

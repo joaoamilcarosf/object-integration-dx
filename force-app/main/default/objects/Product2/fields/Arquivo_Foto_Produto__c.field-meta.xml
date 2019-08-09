@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Arquivo_Foto_Produto__c</fullName>
+    <externalId>false</externalId>
+    <label>Arquivo Foto Produto</label>
+    <length>131072</length>
+    <trackHistory>false</trackHistory>
+    <type>Html</type>
+    <visibleLines>10</visibleLines>
+</CustomField>
