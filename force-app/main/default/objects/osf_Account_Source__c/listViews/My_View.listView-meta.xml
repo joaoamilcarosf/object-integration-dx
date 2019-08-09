@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>My_View</fullName>
+    <columns>NAME</columns>
+    <columns>osf_Source_Number__c</columns>
+    <columns>osf_Codigo_Cobra__c</columns>
+    <columns>LAST_UPDATE</columns>
+    <filterScope>Mine</filterScope>
+    <label>My View</label>
+</ListView>
