@@ -4,16 +4,21 @@
 ### Deploy this project to a scratch org:
 1) Clone the project.
 2) Connect to a Dev Hub org, and give it an alias (e.g.: devhub).
+```
+sfdx force:auth:web:login -a devhub
+```
 3) Create a scratch org and give it an alias (e.g.: demo).
 ```
-sfdx force:org:create -f config/project-scratch-def.json -a demo -v devhub
+sfdx force:org:create -f config/project-scratch-def.json -d 30 -a demo -v devhub
 ```
 4) Push the project to the scratch org.
 ```
 sfdx force:source:push -u demo
 ```
 5) Import sample data provided at ./data.
-
+```
+sfdx force:data:tree:import --plan data/sample-data-plan.json
+```
 6) open the scratch org.
 ```
 sfdx force:org:open -u demo
