@@ -17,7 +17,7 @@ sfdx force:source:push -u demo
 ```
 5) Import sample data provided at ./data.
 ```
-sfdx force:data:tree:import --plan data/sample-data-plan.json
+sfdx force:data:tree:import -p data/sample-data-plan.json -u demo
 ```
 6) open the scratch org.
 ```
