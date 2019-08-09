@@ -1,6 +1,24 @@
 # The Object Integration Process
 ( https://dev.osf-global.com/jira/browse/COBRA-134 )
 
+### Deploy this project to a scratch org:
+1) Clone the project.
+2) Connect to a Dev Hub org, and give it an alias (e.g.: devhub).
+3) Create a scratch org and give it an alias (e.g.: demo).
+```
+sfdx force:org:create -f config/project-scratch-def.json -a demo -v devhub
+```
+4) Push the project to the scratch org.
+```
+sfdx force:source:push -u demo
+```
+5) Import sample data provided at ./data.
+
+6) open the scratch org.
+```
+sfdx force:org:open -u demo
+```
+
 ### Batch flow:
 1) A first query is performed to find the Metadata record that is activated. Metadata is used for integration settings purposes.
 2) The last value founded on this metadata is used to filter another query for the next objects to be processed.
