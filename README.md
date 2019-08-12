@@ -60,7 +60,7 @@ System.debug('Schedule job ID: ' + jobID);
 5) Make changes on osf_Account_Source__c (any field described on Metadata fields map).
 6) Verify changes reflected on osf_Account_Target__c.
 
-If some warn appears or anything goes wrong, please verify the requirements:
+**If some warn appears or anything goes wrong, please verify the requirements:**
 1) Defined both source and target (custom) objects: for this sample code, osf_Account_Source__c and osf_Account_Target__c respectively.
 2) Created a custom metadata type (osf_Account_Mapping__mdt) with the following custom fields, for each source-target pair of objects. Each record of this may represent general instructions about how to proceed with the translation:
 - Active: given it is possible to create many records for a metadata, it is easier to check or uncheck this field to inform which metadata must be considered for the next translations. A priori, only one of them must be checked.
