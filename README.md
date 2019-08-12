@@ -31,7 +31,7 @@ sfdx force:org:open -u demo
 4) Last value for the used metadata is updated. 
 The process is pointed in three basic steps on comments at osf_AccountSourceBatch class.
 
-### Testing:
+##### Testing:
 1) Clone this repository.
 2) Create a scratch org and push this project.
 3) Import records provided on /data/sample-data-plan.json file.
@@ -52,7 +52,7 @@ System.debug('Schedule job ID: ' + jobID);
 1) A first query is performed to find the Metadata record that is activated. Metadata is used for integration settings purposes.
 2) The triggered sobject (Trigger.new) is processed (translated).
 
-### Testing:
+##### Testing:
 1) Clone this repository.
 2) Create a scratch org and push this project.
 3) Import records provided on /data/sample-data-plan.json file.
