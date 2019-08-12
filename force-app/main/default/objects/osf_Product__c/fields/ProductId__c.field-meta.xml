@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductId__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>External product Id, tying this product to the source system. Typically contains the SKU/product id from a backend system such as SAP.</description>
+    <externalId>true</externalId>
+    <label>Product Id</label>
+    <length>128</length>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

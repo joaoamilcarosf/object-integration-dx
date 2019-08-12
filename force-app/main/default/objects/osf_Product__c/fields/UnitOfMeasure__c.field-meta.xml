@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>UnitOfMeasure__c</fullName>
+    <description>Product unit of measure - such as Each</description>
+    <externalId>false</externalId>
+    <label>Unit of Measure</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Each</fullName>
+                <default>true</default>
+                <label>Each</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

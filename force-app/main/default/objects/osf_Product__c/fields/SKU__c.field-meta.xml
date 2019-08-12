@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>SKU__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>SKU/product number/product Id of the product. This is the unique identifier of the product, and is used as the primary reference point within B2B Commerce</description>
+    <externalId>true</externalId>
+    <label>SKU</label>
+    <length>100</length>
+    <required>true</required>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

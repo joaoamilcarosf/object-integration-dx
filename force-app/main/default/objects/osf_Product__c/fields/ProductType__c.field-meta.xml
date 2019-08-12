@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ProductType__c</fullName>
+    <description>Type of product, which determines its behavior in the site. Product - standard product; Bundle - Product that groups multiple products together, with the pricing at the bundle level; Kit - Product that groups multiple products together, where the price is a rollup of the sub-products; Aggregated - Product that contains multiple options for ordering. The main product itself is a placeholder, such as a shirt, and the sub-products are the ordereable items (various shirt colors)</description>
+    <externalId>false</externalId>
+    <label>Product Type</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Coupon</fullName>
+                <default>false</default>
+                <label>Coupon</label>
+            </value>
+            <value>
+                <fullName>Product</fullName>
+                <default>true</default>
+                <label>Product</label>
+            </value>
+            <value>
+                <fullName>Plan</fullName>
+                <default>false</default>
+                <label>Plan</label>
+            </value>
+            <value>
+                <fullName>PlanOptions</fullName>
+                <default>false</default>
+                <label>PlanOptions</label>
+            </value>
+            <value>
+                <fullName>Accessories</fullName>
+                <default>false</default>
+                <label>Accessories</label>
+            </value>
+            <value>
+                <fullName>Bundle</fullName>
+                <default>false</default>
+                <label>Bundle</label>
+            </value>
+            <value>
+                <fullName>Kit</fullName>
+                <default>false</default>
+                <label>Kit</label>
+            </value>
+            <value>
+                <fullName>Aggregated</fullName>
+                <default>false</default>
+                <label>Aggregated</label>
+            </value>
+            <value>
+                <fullName>Assembly</fullName>
+                <default>false</default>
+                <label>Assembly</label>
+            </value>
+            <value>
+                <fullName>Training</fullName>
+                <default>false</default>
+                <label>Training</label>
+            </value>
+            <value>
+                <fullName>Configurable</fullName>
+                <default>false</default>
+                <label>Configurable</label>
+            </value>
+            <value>
+                <fullName>Dynamic Kit</fullName>
+                <default>false</default>
+                <label>Dynamic Kit</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
