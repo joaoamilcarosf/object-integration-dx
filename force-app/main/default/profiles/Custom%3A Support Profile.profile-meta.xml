@@ -310,6 +310,21 @@
         <readable>true</readable>
     </fieldPermissions>
     <layoutAssignments>
+        <layout>Aplicacao__c-Layout de Aplicação</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Fabricante__c-Layout de Fabricante</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Montadora__c-Layout de Montadora</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Product2-Product Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>Tipo_Fabricante__c-Layout de Tipo Fabricante</layout>
+    </layoutAssignments>
+    <layoutAssignments>
         <layout>osf_Account_Mapping__mdt-osf Account Mapping Layout</layout>
     </layoutAssignments>
     <layoutAssignments>
@@ -328,6 +343,26 @@
         <apexPage>osf_Image</apexPage>
         <enabled>false</enabled>
     </pageAccesses>
+    <tabVisibilities>
+        <tab>Aplicacao__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Fabricante__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Grupo_MM_Atualizado__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Montadora__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
+    <tabVisibilities>
+        <tab>Tipo_Fabricante__c</tab>
+        <visibility>DefaultOn</visibility>
+    </tabVisibilities>
     <tabVisibilities>
         <tab>osf_Account_Source__c</tab>
         <visibility>DefaultOn</visibility>
