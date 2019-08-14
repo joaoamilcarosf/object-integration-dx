@@ -23,9 +23,9 @@
         "type": "Tipo_Fabricante__c",
         "referenceId": "TipoFabricanteRef3"
       },
-      "CodigoTipoFabricante__c": "cod-motor1",
-      "Name": "motor",
-      "Descricao_Tipo_Fabricante__c": "automotive motor"
+      "CodigoTipoFabricante__c": "cod-engine1",
+      "Name": "engine",
+      "Descricao_Tipo_Fabricante__c": "automotive engine"
     },
     {
       "attributes": {

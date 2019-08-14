@@ -38,5 +38,13 @@
     "files": [
       "manufacturer.json"
     ]
+  },
+  {
+    "sobject": "Montadora__c",
+    "saveRefs": true,
+    "resolveRefs": true,
+    "files": [
+      "brand.json"
+    ]
   }
 ]

@@ -1,0 +1,164 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef1"
+      },
+      "ID__c": "id-brand-1",
+      "Name": "General Motors Company"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef2"
+      },
+      "ID__c": "id-brand-2",
+      "Name": "Volkswagen Group AG"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef3"
+      },
+      "ID__c": "id-brand-3",
+      "Name": "Toyota Motor Corporation"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef4"
+      },
+      "ID__c": "id-brand-4",
+      "Name": "Hyundai Motor"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef5"
+      },
+      "ID__c": "id-brand-5",
+      "Name": "Ford Motor Company"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef6"
+      },
+      "ID__c": "id-brand-6",
+      "Name": "Nissan"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef7"
+      },
+      "ID__c": "id-brand-7",
+      "Name": "FCA (Fiat Chrysler Automobiles)"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef8"
+      },
+      "ID__c": "id-brand-8",
+      "Name": "PSA Peugeot Citroën S.A."
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef9"
+      },
+      "ID__c": "id-brand-9",
+      "Name": "Honda Motor Company"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef10"
+      },
+      "ID__c": "id-brand-10",
+      "Name": "Renault"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef11"
+      },
+      "ID__c": "id-brand-11",
+      "Name": "Suzuki Motor Corporation"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef12"
+      },
+      "ID__c": "id-brand-12",
+      "Name": "BMW AG"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef13"
+      },
+      "ID__c": "id-brand-13",
+      "Name": "Daimler AG"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef14"
+      },
+      "ID__c": "id-brand-14",
+      "Name": "Mazda Motor Corporation"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef15"
+      },
+      "ID__c": "id-brand-15",
+      "Name": "Mitsubishi Motors Corporation"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef16"
+      },
+      "ID__c": "id-brand-16",
+      "Name": "Chery Automobile Company, Ltd"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef17"
+      },
+      "ID__c": "id-brand-17",
+      "Name": "AB Volvo"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef18"
+      },
+      "ID__c": "id-brand-18",
+      "Name": "Fiat Industrial S.p.A"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef19"
+      },
+      "ID__c": "id-brand-19",
+      "Name": "Koenigsegg"
+    },
+    {
+      "attributes": {
+        "type": "Montadora__c",
+        "referenceId": "MontadoraRef20"
+      },
+      "ID__c": "id-brand-20",
+      "Name": "Tesla Motors"
+    }
+  ]
+}
