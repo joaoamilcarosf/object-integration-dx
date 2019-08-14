@@ -62,6 +62,24 @@
       "CodigoTipoFabricante__c": "cod-clutch1",
       "Name": "clutch",
       "Descricao_Tipo_Fabricante__c": "automotive clutch"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef8"
+      },
+      "CodigoTipoFabricante__c": "cod-tire1",
+      "Name": "tire",
+      "Descricao_Tipo_Fabricante__c": "automotive tire"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef9"
+      },
+      "CodigoTipoFabricante__c": "cod-input1",
+      "Name": "input",
+      "Descricao_Tipo_Fabricante__c": "automotive input"
     }
   ]
 }

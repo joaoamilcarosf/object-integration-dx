@@ -1,0 +1,144 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef1"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-1",
+      "Name": "3M do Brasil",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef6",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef2"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-2",
+      "Name": "ACDelco",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef1",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef3"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-3",
+      "Name": "Bosch",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef3",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef4"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-4",
+      "Name": "Continental",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef5",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef5"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-5",
+      "Name": "Cofap",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef2",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef6"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-6",
+      "Name": "Dayco",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef3",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef7"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-7",
+      "Name": "Grand Prix",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef1",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef8"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-8",
+      "Name": "Loctite",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef9",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef9"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-9",
+      "Name": "Magneti Marelli",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef4",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef10"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-10",
+      "Name": "Shell",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef1",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef11"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-11",
+      "Name": "Texaco",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef1",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef12"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-12",
+      "Name": "Exedy",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef7",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef13"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-13",
+      "Name": "Michelin",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef8",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    },
+    {
+      "attributes": {
+        "type": "Fabricante__c",
+        "referenceId": "FabricanteRef14"
+      },
+      "CodigoFabricante__c": "cod-manufacturer-14",
+      "Name": "Bridgestone",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef8",
+      "Descricao_Fabricante__c": "automotive manufacturer"
+    }
+  ]
+}
