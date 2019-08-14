@@ -7,7 +7,7 @@
       },
       "CodigoFabricante__c": "cod-manufacturer-1",
       "Name": "3M do Brasil",
-      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef6",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef5",
       "Descricao_Fabricante__c": "automotive manufacturer"
     },
     {
@@ -37,7 +37,7 @@
       },
       "CodigoFabricante__c": "cod-manufacturer-4",
       "Name": "Continental",
-      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef5",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef3",
       "Descricao_Fabricante__c": "automotive manufacturer"
     },
     {
@@ -77,7 +77,7 @@
       },
       "CodigoFabricante__c": "cod-manufacturer-8",
       "Name": "Loctite",
-      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef9",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef7",
       "Descricao_Fabricante__c": "automotive manufacturer"
     },
     {
@@ -127,7 +127,7 @@
       },
       "CodigoFabricante__c": "cod-manufacturer-13",
       "Name": "Michelin",
-      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef8",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef6",
       "Descricao_Fabricante__c": "automotive manufacturer"
     },
     {
@@ -137,7 +137,7 @@
       },
       "CodigoFabricante__c": "cod-manufacturer-14",
       "Name": "Bridgestone",
-      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef8",
+      "Codigo_Tipo_Fabricante__c": "@TipoFabricanteRef6",
       "Descricao_Fabricante__c": "automotive manufacturer"
     }
   ]

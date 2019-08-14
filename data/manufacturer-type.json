@@ -23,32 +23,23 @@
         "type": "Tipo_Fabricante__c",
         "referenceId": "TipoFabricanteRef3"
       },
-      "CodigoTipoFabricante__c": "cod-engine1",
-      "Name": "engine",
-      "Descricao_Tipo_Fabricante__c": "automotive engine"
+      "CodigoTipoFabricante__c": "cod-mechanical1",
+      "Name": "mechanical",
+      "Descricao_Tipo_Fabricante__c": "automotive mechanical"
     },
     {
       "attributes": {
         "type": "Tipo_Fabricante__c",
         "referenceId": "TipoFabricanteRef4"
       },
-      "CodigoTipoFabricante__c": "cod-headlight1",
-      "Name": "headlight",
-      "Descricao_Tipo_Fabricante__c": "automotive headlight"
+      "CodigoTipoFabricante__c": "cod-electricity1",
+      "Name": "electricity",
+      "Descricao_Tipo_Fabricante__c": "automotive electricity"
     },
     {
       "attributes": {
         "type": "Tipo_Fabricante__c",
         "referenceId": "TipoFabricanteRef5"
-      },
-      "CodigoTipoFabricante__c": "cod-brake1",
-      "Name": "brake",
-      "Descricao_Tipo_Fabricante__c": "automotive break"
-    },
-    {
-      "attributes": {
-        "type": "Tipo_Fabricante__c",
-        "referenceId": "TipoFabricanteRef6"
       },
       "CodigoTipoFabricante__c": "cod-accessory1",
       "Name": "accessory",
@@ -57,25 +48,16 @@
     {
       "attributes": {
         "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef6"
+      },
+      "CodigoTipoFabricante__c": "cod-rubber1",
+      "Name": "rubber",
+      "Descricao_Tipo_Fabricante__c": "automotive rubber"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
         "referenceId": "TipoFabricanteRef7"
-      },
-      "CodigoTipoFabricante__c": "cod-clutch1",
-      "Name": "clutch",
-      "Descricao_Tipo_Fabricante__c": "automotive clutch"
-    },
-    {
-      "attributes": {
-        "type": "Tipo_Fabricante__c",
-        "referenceId": "TipoFabricanteRef8"
-      },
-      "CodigoTipoFabricante__c": "cod-tire1",
-      "Name": "tire",
-      "Descricao_Tipo_Fabricante__c": "automotive tire"
-    },
-    {
-      "attributes": {
-        "type": "Tipo_Fabricante__c",
-        "referenceId": "TipoFabricanteRef9"
       },
       "CodigoTipoFabricante__c": "cod-input1",
       "Name": "input",

@@ -1,0 +1,124 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef1"
+      },
+      "CodigoAplicacao__c": "cod-application1",
+      "Name": "exterior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef2",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef2"
+      },
+      "CodigoAplicacao__c": "cod-application2",
+      "Name": "exterior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef3",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef3"
+      },
+      "CodigoAplicacao__c": "cod-application3",
+      "Name": "exterior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef4",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef4"
+      },
+      "CodigoAplicacao__c": "cod-application4",
+      "Name": "exterior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef5",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef5"
+      },
+      "CodigoAplicacao__c": "cod-application5",
+      "Name": "exterior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef6",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef6"
+      },
+      "CodigoAplicacao__c": "cod-application6",
+      "Name": "exterior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef7",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef7"
+      },
+      "CodigoAplicacao__c": "cod-application7",
+      "Name": "interior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef1",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef8"
+      },
+      "CodigoAplicacao__c": "cod-application8",
+      "Name": "interior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef9",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef9"
+      },
+      "CodigoAplicacao__c": "cod-application9",
+      "Name": "interior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef13",
+      "Montadora__c": "@MontadoraRef1"
+    },
+    {
+      "attributes": {
+        "type": "Aplicacao__c",
+        "referenceId": "AplicacaoRef10"
+      },
+      "CodigoAplicacao__c": "cod-application10",
+      "Name": "interior",
+      "Descricao_Aplicacao__c": "vehicle application",
+      "Descricao_Aplicacao_Pesquisa__c": "",
+      "Fabricante__c": "@FabricanteRef14",
+      "Montadora__c": "@MontadoraRef1"
+    }
+  ]
+}
