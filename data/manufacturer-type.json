@@ -1,0 +1,67 @@
+{
+  "records": [
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef1"
+      },
+      "CodigoTipoFabricante__c": "cod-lubrificant1",
+      "Name": "lubrificant",
+      "Descricao_Tipo_Fabricante__c": "automotive lubrificant"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef2"
+      },
+      "CodigoTipoFabricante__c": "cod-suspension1",
+      "Name": "suspension",
+      "Descricao_Tipo_Fabricante__c": "automotive suspension"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef3"
+      },
+      "CodigoTipoFabricante__c": "cod-motor1",
+      "Name": "motor",
+      "Descricao_Tipo_Fabricante__c": "automotive motor"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef4"
+      },
+      "CodigoTipoFabricante__c": "cod-headlight1",
+      "Name": "headlight",
+      "Descricao_Tipo_Fabricante__c": "automotive headlight"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef5"
+      },
+      "CodigoTipoFabricante__c": "cod-brake1",
+      "Name": "brake",
+      "Descricao_Tipo_Fabricante__c": "automotive break"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef6"
+      },
+      "CodigoTipoFabricante__c": "cod-accessory1",
+      "Name": "accessory",
+      "Descricao_Tipo_Fabricante__c": "automotive accessory"
+    },
+    {
+      "attributes": {
+        "type": "Tipo_Fabricante__c",
+        "referenceId": "TipoFabricanteRef7"
+      },
+      "CodigoTipoFabricante__c": "cod-clutch1",
+      "Name": "clutch",
+      "Descricao_Tipo_Fabricante__c": "automotive clutch"
+    }
+  ]
+}
