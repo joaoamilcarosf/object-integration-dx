@@ -31,5 +31,13 @@
     "files": [
       "application.json"
     ]
+  },
+  {
+    "sobject": "Product2",
+    "saveRefs": true,
+    "resolveRefs": true,
+    "files": [
+      "product.json"
+    ]
   }
 ]
