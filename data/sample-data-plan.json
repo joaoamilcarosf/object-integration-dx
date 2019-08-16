@@ -1,5 +1,28 @@
 [
-  
+  {
+    "sobject": "osf_Account_Source__c",
+    "saveRefs": true,
+    "resolveRefs": true,
+    "files": [
+      "osf-account-source.json"
+    ]
+  },
+  {
+    "sobject": "osf_Account_Target__c",
+    "saveRefs": true,
+    "resolveRefs": true,
+    "files": [
+      "osf-account-target.json"
+    ]
+  },
+  {
+    "sobject": "osf_Image__c",
+    "saveRefs": true,
+    "resolveRefs": true,
+    "files": [
+      "osf-image.json"
+    ]
+  },
   {
     "sobject": "Tipo_Fabricante__c",
     "saveRefs": true,
