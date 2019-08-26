@@ -28,7 +28,7 @@ sfdx force:org:open -u <scratch org username/alias>
 
 ### Batch flow:
 1) A first query is performed to find the Metadata record that is activated. Metadata is used for integration settings purposes.
-2) The last value founded on this metadata is used to filter another query for the next objects to be processed.
+2) The last value found on this metadata is used to filter another query for the next objects to be processed.
 3) Objects are processed (translated).
 4) Last value for the used metadata is updated. 
 The process is pointed in three basic steps on comments at osf_AccountSourceBatch class.
