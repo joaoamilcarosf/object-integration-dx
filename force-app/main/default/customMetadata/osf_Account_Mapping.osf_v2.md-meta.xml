@@ -8,7 +8,7 @@
     </values>
     <values>
         <field>osf_Email__c</field>
-        <value xsi:type="xsd:string">amilcar.rodrigues@osf-commerce.com</value>
+        <value xsi:type="xsd:string">contact@osf-commerce.com</value>
     </values>
     <values>
         <field>osf_Fields_Map__c</field>
